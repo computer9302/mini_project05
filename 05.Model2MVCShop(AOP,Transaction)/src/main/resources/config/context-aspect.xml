@@ -17,7 +17,7 @@
 	 			:: TestAspectJ02.java(pointCut+advice 합치기(?)) 의 annotation과 아래를 비교 -->
 	 <aop:config>
 	 	<aop:aspect  ref="logAspect">
-	 		<aop:around 
+	 		<aop:around                                          
 					pointcut="execution(* com.model2.mvc.service..*Impl.*(..) )"	method="invoke"/>
 	 	</aop:aspect>
 	 </aop:config>
